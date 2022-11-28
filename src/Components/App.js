@@ -1,9 +1,7 @@
 import Jogo from "./Jogo"
-import Letras from "./Letras"
+import Letras, { letraClickada } from "./Letras"
 import Chute from "./Chute.js"
-import { letraClickada } from "./Letras"
 import palavras from "../palavras"
-
 
 export default function App() {
     return (
@@ -15,6 +13,12 @@ export default function App() {
             
         </div>
     )
+}
+
+export function teste(letra){ 
+
+    console.log(letra)
+    return letra
 }
 
 export function randomWord() {

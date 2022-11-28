@@ -1,3 +1,7 @@
+import React from "react"
+import { teste } from "./App"
+
+let letraClickada
 
 export default function Letras() {
 
@@ -10,14 +14,26 @@ export default function Letras() {
     )
 }
 
-export function letraClickada(letra){
-    return(letra)
-}
+
 
 function Letra(props) {
 
+    const [letra, setLetra] = React.useState(<button onClick={() => letraClickada(props.data)}>{props.data}</button>)
+
+    const letraClickada = (letra) => {
+
+        const resposta = <button class= "apagada">{props.data}</button>
+        setLetra(resposta)
+
+        teste(letra)
+        return(letra)
+    }
+
     return(
-        <button onClick={() => letraClickada(props.data)}>{props.data}</button>
+        <>
+            {letra}
+        </>
     )
 }
 
+export {letraClickada}

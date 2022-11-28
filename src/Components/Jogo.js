@@ -1,10 +1,11 @@
 import React from "react";
-import { randomWord } from "./App"
+import { component } from "./App";
+
+
 
 export default function Jogo() {
 
-    const palavra = randomWord()
-
+    let palavra = component
     const [estado, setEstado] = React.useState("")
 
     function gerar() {
@@ -14,7 +15,7 @@ export default function Jogo() {
     return(
         <div class="jogo">
             <img src="assets/forca0.png" class="forca"/>
-            <div>
+            <div class='container2'>
                 <buttom onClick={gerar}>Escolher Palavra</buttom>
                 <ul class="palavra">
                     {estado}
@@ -27,6 +28,7 @@ export default function Jogo() {
 function Letra(props) {
 
     return(
-        <li>{props.data}</li>
+        <li class="off">{props.data}</li>
     )
+
 }

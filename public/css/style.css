@@ -49,11 +49,25 @@ body {
   border-radius: 8px;
   background-color: #27ae60;
   font-size: 20px;
-  font-weight: 700px;
+  font-weight: 700;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.jogo ul {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
 }
 
 .palavra {
@@ -61,7 +75,7 @@ body {
   display: flex;
   font-size: 50px;
   font-weight: 700;
-  line-height: 68px;
+  line-height: 68.1px;
   color: #000000;
   font-family: 'Noto Sans';
   margin-top: 282px;
@@ -106,4 +120,15 @@ body {
 
 .forca {
   width: 400px;
+}
+
+.letras .apagada {
+  background-color: #9faab5;
+  color: #798a9f
+}
+
+.off {
+  color: rgba(0, 0, 0, 0);
+  border-bottom: #000000 solid 5px;
+  width: 40px;
 }
