@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+  font-family: 'Roboto';
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.letras button {
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 3px;
+  background-color: #e1ecf4;
+  border: 1px solid #7aa7c7;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #39739d;
+}
+
+.letras {
+  width: 664px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 56px;
+}
+
+.jogo {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 39px;
+  display: flex;
+  margin-bottom: 73px;
+  margin-top: 59px;
+  justify-content: space-between;
+}
+
+.jogo buttom {
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #27ae60;
+  font-size: 20px;
+  font-weight: 700px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.palavra {
+  width: 323px;
+  display: flex;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 68px;
+  color: #000000;
+  font-family: 'Noto Sans';
+  margin-top: 282px;
+}
+
+.chute {
+  font-family: 'Roboto';
+  margin-bottom: 56px;
+  text-align: center;
+  width: 624px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chute buttom{
+  width: 100px;
+  height: 40px;
+  color: #3c76a1;
+  background-color: #e1ecf4;
+  border: 1px solid #7aa7c7;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.chute input{
+  width: 353px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.chute span{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.forca {
+  width: 400px;
+}
