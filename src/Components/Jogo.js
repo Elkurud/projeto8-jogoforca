@@ -7,6 +7,10 @@ export default function Jogo({
   setPregame,
   setPalavraEscolhida,
   erro,
+  word,
+  setWord,
+  palavra,
+  setPalavra
 }) {
   const palavras = [
     "abacate",
@@ -199,26 +203,23 @@ export default function Jogo({
     "zumbido",
   ];
 
-  let word = Array.from(palavras[Math.floor(Math.random() * palavras.length)]);
-
-  const [palavra, setPalavra] = React.useState("");
   const [i, setI] = React.useState(0);
-  console.log(letras.includes("a"));
 
   function gerar() {
     if (i < 1) {
-    //   setPalavra(
-    //     word.map((f) => (
-    //       <li className={`${letras.includes(f) ? "l" : "l-on"}`}>{f}</li>
-    //     ))
-    //   );
+      setPalavraEscolhida(word);
+      console.log(word)
       setPalavra(
-        word.map((f) => (
-          <li className={`${letras.includes(f) ? "l-on" : "l"}`}>{f}</li>
-        ))
+        word.map(
+          (f) => (
+            (<li className={`${letras.includes(f) ? "l-on" : "l"}`}>{f}</li>)
+          )
+        )
+      );
+      setWord(
+        Array.from(palavras[Math.floor(Math.random() * palavras.length)])
       );
       setPregame("");
-      setPalavraEscolhida(word);
       setI(2);
     }
   }
